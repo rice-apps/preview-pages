@@ -18,7 +18,8 @@ function App() {
 	return (
 		<div className="App">
 			<p>
-				time to <b>hatch.</b> a new plan <br /> coming 11/12
+				a new plan. <br /> 
+				set to <b>hatch</b> on 11/12
 			</p>
 		</div>
 	);
