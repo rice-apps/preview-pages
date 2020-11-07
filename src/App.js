@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const newFeatures = [
+		"search by distribution, instructor, day & time",
+		"search multiple subjects concurrently",
+		"improved calendar ui (jony ives approved)",
+		"baller draft courses view",
+		"cute about page to commend our contributors <3",
+	];
+	useEffect(() => {
+		console.log("Easter Egg!");
+		console.log("Checkout the New Features:");
+		newFeatures.map((feature) => console.log(feature));
+	}, []);
+
+	return (
+		<div className="App">
+			<p>
+				time to <b>hatch.</b> a new plan <br /> coming 11/12
+			</p>
+		</div>
+	);
 }
 
 export default App;
